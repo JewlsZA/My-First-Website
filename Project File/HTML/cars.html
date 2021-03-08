@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+</html>
+
+<html>
+
+<head>
+  <title>Find your BMW</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--style sheets-->
+  <link href="../scss/main.css" rel="stylesheet">
+  <!--Imports the jQuery library into HTML document.-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+<body onload="initialize()" title="save this vehicle to bookmarks">
+  <h1>Find the BMW perfect for you</h1>
+
+  <!--Cars boxes-->
+  <div class="carbox">
+
+    <!--Box Left-->
+    <div class="vehicle-box" onclick="saveOnClick()">BMW 1 Series
+      <img src="../images/1 series car.jpg" class="vehicle-image" alt="car">
+      <img src="../images/thumb.png" class="thumbsUp" alt="thumbs" title="save this image to bookmarks">
+      <p>Hatchback : light on fuel </p>
+      <img src="../images/vehicle.png"  class="vehicleBookmark" alt="vehicle" title="save this vehicle to bookmarks">
+      <a href="https://www.bmw.co.za/en/all-models/1-series.html">Buy this Car</a>
+    </div>
+
+    <!--Box Centre-->
+    <div class="vehicle-box" onclick="saveOnClick()">BMW M4
+      <img src="../images/m4 car.jpg" class="vehicle-image" alt="car">
+      <img src="../images/thumb.png" class="thumbsUp" alt="thumbs" title="save this image to bookmarks">
+      <p>Performance Sadan : Powerful Sports Car </p>
+      <img src="../images/vehicle.png"  class="vehicleBookmark" alt="vehicle" title="save this vehicle to bookmarks">
+      <a href="https://www.bmw.co.za/en/all-models/m-series/m4-coupe/2019/bmw-m4-coupe-inspire.html">Buy this Car</a>
+    </div>
+
+    <!--Box Right-->
+    <div class="vehicle-box" onclick="saveOnClick()">BMW M8
+      <img src="../images/m8 car.jpg" class="vehicle-image" alt="car">
+      <img src="../images/thumb.png" class="thumbsUp" alt="thumbs" title="save this image to bookmarks">
+      <p>Luxury Coupe : Top end everything </p>
+      <img src="../images/vehicle.png"  class="vehicleBookmark" alt="vehicle" title="save this vehicle to bookmarks">
+      <a
+        href="https://www.bmw.co.za/en/all-models/m-series/m8-gran-coupe/2019/bmw-8-series-gran-coupe-m-automobiles-highlights.html">Buy
+        this Car</a>
+    </div>
+  </div><br><br>
+  <a href="bookmark.html" class="bookmarkpagelink">Go to your saved bookmarks here</a><br><br>
+  <a class="homebutton" href="index.html">Back to main page</a>
+  <!--javascript link-->
+  <script type="text/javascript" src="../javascript/main.js"></script>
+  <script type="text/javascript" src="../javascript/bookmark.js"></script>
+  <script type="text/javascript" src="../javascript/utilities.js"></script>
+</body>
+
+</html>

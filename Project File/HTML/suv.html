@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+</html>
+
+<html>
+
+<head>
+  <title>Find your BMW</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--style sheets-->
+  <link href="../scss/main.css" rel="stylesheet">
+  <!--Imports the jQuery library into HTML document.-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+<body onload="initialize()">
+  <h1>Find the BMW perfect for you</h1>
+
+  <!--Cars boxes-->
+  <div class="carbox">
+
+    <!--Box left-->
+    <div class="vehicle-box" onclick="saveOnClick()">BMW X1
+      <img src="../images/x1 suv.jpg" class="vehicle-image" alt="SUV">
+      <img src="../images/thumb.png" class="thumbsUp" alt="thumbs" title="save this image to bookmarks">
+      <p> Compact SUV : Light and nimble </p>
+      <img src="../images/vehicle.png"  class="vehicleBookmark" alt="vehicle" title="save this vehicle to bookmarks">
+      <a href="https://www.bmw.co.za/en/all-models/x-series/X1/2019/bmw-x1-inspire.html">Buy this SUV</a>
+    </div>
+
+    <!--Box Centre-->
+    <div class="vehicle-box" onclick="saveOnClick()">BMW X3
+      <img src="../images/x3 suv.jpg" class="vehicle-image" alt="SUV">
+      <img src="../images/thumb.png" class="thumbsUp" alt="thumbs" title="save this image to bookmarks">
+      <p>Mid tier SUV : Have all the space in a humble size </p>
+      <img src="../images/vehicle.png"  class="vehicleBookmark" alt="vehicle" title="save this vehicle to bookmarks">
+      <a href="https://www.bmw.co.za/en/all-models/x-series/X3/2019/bmw-x3-inspire.html">Buy this SUV</a>
+    </div>
+
+    <!--Box Right-->
+    <div class="vehicle-box" onclick="saveOnClick()">BMX X5
+      <img src="../images/x5 suv.jpg" class="vehicle-image" alt="SUV">
+      <img src="../images/thumb.png" class="thumbsUp" alt="thumbs" title="save this image to bookmarks">
+      <p>Full Size SUV : Bigger is better </p>
+      <img src="../images/vehicle.png"  class="vehicleBookmark" alt="vehicle" title="save this vehicle to bookmarks">
+      <a href="https://www.bmw.co.za/en/all-models/x-series/X5/2019/bmw-x5-models-equipment.html">Buy this SUV</a>
+    </div>
+  </div><br><br>
+  <a href="bookmark.html" class="bookmarkpagelink">Go to your saved bookmarks here</a><br><br>
+  <a class="homebutton" href="index.html">Back to main page</a>
+  <!--javascript link-->
+  <script type="text/javascript" src="../javascript/main.js"></script>
+  <script type="text/javascript" src="../javascript/bookmark.js"></script>
+  <script type="text/javascript" src="../javascript/utilities.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+</html>
+
+<html>
+
+<head>
+  <title>Find your BMW</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--style sheets-->
+  <link href="../scss/main.css" rel="stylesheet">
+  <!--Imports the jQuery library into HTML document.-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+<body onload="initialize()">
+  <h1>Find the BMW perfect for you</h1>()
+
+  <!--Cars boxes-->
+  <div class="carbox">
+
+    <!--Box Left-->
+    <div class="vehicle-box" onclick="saveOnClick()">BMW HP4 Race
+      <img src="../images/sport bike.jpg" class="vehicle-image" alt="bike">
+      <img src="../images/thumb.png" class="thumbsUp" alt="thumbs" onclick="saveOnClick(this)" title="save this image to bookmarks">
+      <p>Sport Bike : go fast</p>
+      <img src="../images/vehicle.png"  class="vehicleBookmark" alt="vehicle" title="save this vehicle to bookmarks">
+      <a href="https://www.bmw-motorrad.co.za/en/models/sport/hp4race.html">Buy this bike</a>
+    </div>
+
+    <!--Box Centre-->
+    <div class="vehicle-box" onclick="saveOnClick()">BMW R1250 GS
+      <img src="../images/adventure bike.jpg" class="vehicle-image" alt="bike">
+      <img src="../images/thumb.png" class="thumbsUp" alt="thumbs" title="save this image to bookmarks">
+      <p>Adventure Bike : go anywhere</p>
+      <img src="../images/vehicle.png"  class="vehicleBookmark" alt="vehicle" title="save this vehicle to bookmarks">
+      <a href="https://www.bmw-motorrad.co.za/en/models/adventure/r1250gs.html#/section-64b216de-section">Buy this
+        bike</a>
+    </div>
+
+    <!--Box Right-->
+    <div class="vehicle-box" onclick="saveOnClick()"> BMW K1699gt Tour
+      <img src="../images/cruise bike.jpg" class="vehicle-image" alt="bike">
+      <img src="../images/thumb.png" class="thumbsUp" alt="thumbs" title="save this image to bookmarks">
+      <p>Road Bike : Cruise with style</p>
+      <img src="../images/vehicle.png"  class="vehicleBookmark" alt="vehicle" title="save this vehicle to bookmarks">
+      <a href="https://www.bmw-motorrad.co.za/en/models/tour/k1600gt.html">Buy this bike</a>
+    </div>
+  </div><br><br>
+  <a href="bookmark.html" class="bookmarkpagelink">Go to your saved bookmarks here</a><br><br>
+  <a class="homebutton" href="index.html">Back to main page</a>
+  <!--javascript link-->
+  <script type="text/javascript" src="../javascript/main.js"></script>
+  <script type="text/javascript" src="../javascript/bookmark.js"></script>
+  <script type="text/javascript" src="../javascript/utilities.js"></script>
+</body>
+
+
+</html>

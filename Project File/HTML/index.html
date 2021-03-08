@@ -1,0 +1,175 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <title>Find your BMW</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Imports the jQuery library into HTML document.-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--main.css style sheet-->
+  <link href="../scss/main.css" rel="stylesheet">
+</head>
+
+<body style="width: 100vw; " onload="initialize()">
+  <h1>Find the BMW perfect for you</h1><br><br>
+
+  <div class="topfunctions">
+
+    <!--Radio Button-->
+    <div class="RadioLetter">
+      <h2>What vehicle do you currently drive ?</h2>
+
+      <div>
+        <input type='radio' name='vehicle-type' id='car' value='I want a car'>Car</input>
+        <input type='radio' name='vehicle-type' id='bike' value='bike'>Bike</input>
+        <input type='radio' name='vehicle-type' id='suv' value='SUV'>SUV</input>
+      </div>
+    </div>
+
+    <!--email mailing list-->
+    <div class="RadioLetter">
+      <h2>Would you like to recieve weekly car news?</h2>
+
+      <form>
+        <label class="emailer" for="fname">Subscribe to our newsletter</label>
+        <input class="emailer" type="text" name="fname" placeholder="Your email..">
+        <input class="emailer" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  <!--Cars boxes-->
+  <div class="carbox">
+
+    <!--Motor bike-->
+    <div class="vehicle-box">
+      <img src="../images/sport bike.jpg" id="sportBike" class="vehicle-image" alt="bike">
+      <img src="../images/thumb.png" class="thumbsUp" alt="thumbs" title="save this image to bookmarks">
+      <h5>Motorbikes</h5>
+      <p>Description: Light and Fast </p>
+      <img src="../images/vehicle.png"  class="vehicleBookmark" alt="vehicle" title="save this vehicle to bookmarks">
+      <a href="bikes.html">See more bikes here</a>
+    </div>
+
+    <!--car-->
+    <div class="vehicle-box">
+      <img src="../images/m4 car.jpg" class="vehicle-image" alt="car">
+      <img src="../images/thumb.png" class="thumbsUp" alt="thumbs" title="save this image to bookmarks">
+      <h5>Cars</h5>
+      <p>Description: Drive in Comfort </p>
+      <img src="../images/vehicle.png"  class="vehicleBookmark" alt="vehicle" title="save this vehicle to bookmarks">
+      <a href="cars.html">See more Cars here</a>
+    </div>
+
+    <!--SUV-->
+    <div class="vehicle-box">
+      <img src="../images/x5 suv.jpg" class="vehicle-image" alt="suv">
+      <img src="../images/thumb.png" class="thumbsUp" alt="thumbs" title="save this image to bookmarks">
+      <h5>SUV's</h5>
+      <p>Description: Bigger is better </p>
+      <img src="../images/vehicle.png"  class="vehicleBookmark" alt="vehicle" title="save this vehicle to bookmarks">
+      <a href="suv.html">See more SUV's here</a>
+    </div>
+  </div><br>
+  <a href="bookmark.html" class="bookmarkpagelink">Go to your saved bookmarks here</a><br><br>
+
+  <!--Table-->
+  <table id="mytable">
+    <tr>
+      <th>Vehicle</th>
+      <th>Fuel Usage</th>
+      <th>Passenger Count</th>
+      <th>Weight</th>
+    </tr>
+    <tr>
+      <td>Bikes</td>
+      <td>Low</td>
+      <td>1-2</td>
+      <td>Under a ton</td>
+    </tr>
+    <tr>
+      <td>Cars</td>
+      <td>Medium</td>
+      <td>2-4</td>
+      <td>Over a ton</td>
+    </tr>
+    <tr>
+      <td>SUVs</td>
+      <td>Medium to High</td>
+      <td>4-6</td>
+      <td>Over 2 tons</td>
+    </tr>
+
+  </table>
+  
+
+  <!--Testimonials-->
+  <h2>Why choose us?</h2>
+  <button class="btn" id="hideandshow">Hide/Show Testimonials</button>
+  <div class="Testimonials">
+    
+    <img src="../images/connor.jpg" class="testoImages" alt="fight man" style="width:90px">
+    <p><span>Connor Mcgregor.</span> Professional MMA fighter.</p>
+    <p>I have so much money but don't know what to buy, Find your BMW helped me make a descision.</p>
+  </div>
+
+  <div class="Testimonials">
+    <img src="../images/Elon.jpg" class="testoImages" alt="rocket man" style="width:90px">
+    <p><span>Elon Musk.</span> CEO of Tesla and Spacex and more.</p>
+    <p>Find your BMW made it very easy to decide what car I will strap on my next rocket.</p>
+  </div><br>
+
+  <!--Drop down menue-->
+  <ul id="accordion">
+    <li>
+      <span id="dropdown">Catch up on older news letters &darr;</span>
+      <ul>
+        <li>3/2/2021 News letter</li>
+        <li>3/3/2021 News letter</li>
+        <li>3/4/2021 News letter</li>
+        <li>3/5/2021 News letter</li>
+        <li>3/6/2021 News letter</li>
+      </ul>
+    </li>
+  </ul>
+
+  <!--Contact us form-->
+  <div class="contactForm">
+    <h2>Would you like to contact us?</h2>
+    <h3>Leave your details below and we will get back to you</h3>
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email..">
+
+      <label for="message">Message</label>
+      <textarea type="text" id="message" name="message" placeholder="Anything you would like to mention?.."
+        style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <!--comment_box-->
+   <div class="comment_box">
+    <form>
+      <p>Add your comments and suggestions:<br><textarea name="comments" id="userComment" rows="3" cols="30"></textarea><br><br>
+        <input type="submit" value="Submit Comment" id="submitComment">
+      </p>
+    </form>
+    <h2>Comments:</h2>
+    <p id="commentList"></p>
+  </div> 
+
+  <!--javascript link-->
+  <script type="text/javascript" src="../javascript/main.js"></script>
+  <script type="text/javascript" src="../javascript/bookmark.js"></script>
+  <script type="text/javascript" src="../javascript/utilities.js"></script>
+</body>
+
+</html>
