@@ -10,7 +10,7 @@ $(document).ready(function () {
     //a chained effect animation to slide all images on page landing
     function imageSlider() {
 
-        $("img").slideUp(0.1).slideDown(700);
+        $("img").slideUp(0.1).slideDown(900);
     }
     imageSlider();
 
